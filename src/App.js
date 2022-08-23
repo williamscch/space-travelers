@@ -1,17 +1,24 @@
+import {
+  HashRouter as Router, Navigate, Route, Routes,
+} from 'react-router-dom';
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import MyProfile from './components/MyProfile';
-import Navigation from './components/Navigation';
+import Nav from './components/Nav';
+import MyProfile from './components/profile/profile';
+import MissionPage from './pages/Missions';
+import RocketPage from './pages/Rockets';
 
-const App = () => (
-  <>
-    <Navigation />
-    <Routes>
-      <Route path="/" />
-      <Route path="/missions" />
-      <Route path="/my-profile" element={<MyProfile />} />
-    </Routes>
-  </>
-);
+function App() {
+  return (
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<RocketPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/missions" element={<MissionPage />} />
+        <Route path="/myProfile" element={<MyProfile />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;

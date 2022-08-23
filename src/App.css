@@ -1,39 +1,8 @@
 * {
-  text-decoration: none;
-  box-sizing: border-box;
-  margin: 0;
   padding: 0;
-  list-style: none;
+  margin: 0;
 }
-
-nav {
-  display: flex;
-  align-items: center;
-  padding: 0.7rem 4rem;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(184, 165, 165);
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.nav-logo {
-  width: 60px;
-}
-
-.links-items {
-  display: flex;
-  gap: 1rem;
-}
-
-.link {
-  color: #02bab7;
-}
-
-.active {
-  color: #f66f1c;
-  text-decoration: underline;
+* {
+  padding: 0;
+  margin: 0;
 }
