@@ -1,56 +1,49 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-// import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './Rockets.css';
+import { getRockets, rocketsReducer } from '../../redux/rockets/rockets';
 
-const Rockets = (props) => {
-  const {
-    id, rocketName, description, flickrImages, reserved,
-  } = props;
+const Rockets = () => {
+  const dispatch = useDispatch();
+  const { rockets } = useSelector((state) => state.rockets);
 
-  // const dispatch = useDispatch();
-
-  // const reserveHandler = () => { dispatch(reserveRockets(id)); };
-  // const cancelHandler = () => { dispatch(cancelRockets(id)); };
+  useEffect(() => {
+    if (!rockets.length) {
+      dispatch(getRockets());
+    }
+  }, []);
 
   return (
-    <li className="rocket-container" id={id}>
-      <div className="img-container">
-        <img src={flickrImages} alt="logo" />
-      </div>
-      <div className="info-container">
-        <h2>{rocketName}</h2>
-        <div className="description">
-          {reserved && <span className="badge">Reserved</span>}
-          <span> </span>
-          {description}
+    <section>
+      {rockets.map((rocket) => (
+        <div key={rocket.rocketId} className="rocket-card">
+          <img alt={rocket.rocketName} src={rocket.rocketImage[0]} />
+          <div className="rocket-info">
+            <h2>
+              {rocket.rocketName}
+              <span className={rocket.reserved ? 'badge' : 'no-badge'}>
+                Reserved
+              </span>
+            </h2>
+            <p>{rocket.rocketDescription}</p>
+            <button
+              className={
+                rocket.reserved
+                  ? 'cancel-reservation-button'
+                  : 'reserve-rocket-button'
+              }
+              onClick={() => {
+                dispatch(rocketsReducer(rocket.rocketId));
+              }}
+              type="button"
+            >
+              {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+            </button>
+          </div>
         </div>
-        {/* <div>
-          {reserved && (
-            // <button onClick={() =>
-             { cancelHandler(); }} className="rocket-cancel" type="button">Cancel
-              Reservation</button>
-          )}
-          {!reserved && (
-            // <button onClick={() =>
-            { reserveHandler(); }} className="rocket-reserve" type="button">Reserve Rocket</button>
-          )}
-        </div> */}
-      </div>
-    </li>
+      ))}
+    </section>
   );
-};
-
-Rockets.propTypes = {
-  id: PropTypes.number.isRequired,
-  rocketName: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  flickrImages: PropTypes.string.isRequired,
-  reserved: PropTypes.bool,
-};
-
-Rockets.defaultProps = {
-  reserved: false,
 };
 
 export default Rockets;
