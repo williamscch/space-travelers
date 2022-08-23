@@ -1,5 +1,4 @@
 import React from 'react';
-import RocketsList from '../components/Rockets/RocketsList';
 import '../components/Rockets/Rockets.css';
 
 const RocketsPage = () => (
