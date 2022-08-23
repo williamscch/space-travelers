@@ -1,7 +1,4 @@
-import {
-  HashRouter as Router, Navigate, Route, Routes,
-} from 'react-router-dom';
-import './App.css';
+
 import Nav from './components/Nav';
 import MyProfile from './components/profile/profile';
 import MissionPage from './pages/Missions';
