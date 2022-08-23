@@ -1,20 +1,19 @@
 import { Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Nav from './components/Nav';
-import MyProfile from './components/profile/profile';
-import MissionPage from './pages/Missions';
+import Nav from './components/NavBar/Nav';
+import MyProfile from './components/Profile/MyProfile';
+import Missions from './components/Missions/Missions';
+import Rockets from './components/Rockets/Rockets';
 
-function App() {
-  return (
-    <Router>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<MyProfile />} />
-        <Route path="/missions" element={<MissionPage />} />
-        <Route path="/myProfile" element={<MyProfile />} />
-      </Routes>
-    </Router>
-  );
-}
+const App = () => (
+  <Router>
+    <Nav />
+    <Routes>
+      <Route path="/" element={<Rockets />} />
+      <Route path="/missions" element={<Missions />} />
+      <Route path="/myProfile" element={<MyProfile />} />
+    </Routes>
+  </Router>
+);
 
 export default App;

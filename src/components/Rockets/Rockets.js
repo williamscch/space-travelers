@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // import { useDispatch } from 'react-redux';
 import './Rockets.css';
 
-const Rocket = (props) => {
+const Rockets = (props) => {
   const {
     id, rocketName, description, flickrImages, reserved,
   } = props;
@@ -41,7 +41,7 @@ const Rocket = (props) => {
   );
 };
 
-Rocket.propTypes = {
+Rockets.propTypes = {
   id: PropTypes.number.isRequired,
   rocketName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -49,8 +49,8 @@ Rocket.propTypes = {
   reserved: PropTypes.bool,
 };
 
-Rocket.defaultProps = {
+Rockets.defaultProps = {
   reserved: false,
 };
 
-export default Rocket;
+export default Rockets;
