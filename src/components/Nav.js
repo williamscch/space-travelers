@@ -25,7 +25,7 @@ function Nav() {
         <span>|</span>
         <li className="nav-li">
           <NavLink to="/myProfile" className={activeLink}>
-            My profile
+            My profilee
           </NavLink>
         </li>
       </ul>
