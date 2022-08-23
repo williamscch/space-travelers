@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.missions {
+  width: 50%;
+}
+
+.rockets {
+  width: 50%;
+}
+
+.missions > h2 {
+  margin-bottom: 2rem;
+}
+
+.rockets > h2 {
+  margin-bottom: 2rem;
+}
+
+.missions-table {
+  width: 100%;
+  border: 2px solid #7e7e7e;
+  border-collapse: collapse;
+}
+
+.row {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 15px;
+}
+
+.row > td {
+  padding: 1rem;
+  text-align: left;
+}
+
+td.row:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
