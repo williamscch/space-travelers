@@ -5,35 +5,3 @@
   padding: 0;
   list-style: none;
 }
-
-nav {
-  display: flex;
-  align-items: center;
-  padding: 0.7rem 4rem;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(184, 165, 165);
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.nav-logo {
-  width: 60px;
-}
-
-.links-items {
-  display: flex;
-  gap: 1rem;
-}
-
-.link {
-  color: #02bab7;
-}
-
-.active {
-  color: #f66f1c;
-  text-decoration: underline;
-}

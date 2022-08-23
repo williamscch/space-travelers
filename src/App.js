@@ -1,11 +1,11 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import MyProfile from './components/MyProfile';
-import Navigation from './components/Navigation';
+import MyProfile from './components/profile/MyProfile';
+import Nav from './components/Nav';
 
 const App = () => (
   <>
-    <Navigation />
+    <Nav />
     <Routes>
       <Route path="/" />
       <Route path="/missions" />

@@ -6,7 +6,7 @@ nav {
   border-bottom: solid 1px rgb(222, 220, 220);
 }
 
-.logo-conatiner {
+.logo-container {
   display: flex;
   align-items: center;
   gap: 8px;
