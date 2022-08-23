@@ -7,9 +7,10 @@ function Nav() {
 
   return (
     <nav>
-      <div className="logo-container">
-        <img className="nav-logo" src={planet} alt="logo" />
-        <h1 className="nav-h1">Space Travelers Hub</h1>
+
+      <div className="logo-conatiner">
+        <img className="nav-logo" src={planetColors} alt="logo" />
+        <h1 className="nav-h1">Space Traveleers Hub</h1>
       </div>
       <ul className="nav-ul">
         <li className="nav-li">

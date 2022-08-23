@@ -1,17 +1,19 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import MyProfile from './components/profile/MyProfile';
-import Nav from './components/Nav';
 
-const App = () => (
-  <>
-    <Nav />
-    <Routes>
-      <Route path="/" />
-      <Route path="/missions" />
-      <Route path="/my-profile" element={<MyProfile />} />
-    </Routes>
-  </>
-);
+import Nav from './components/Nav';
+import MyProfile from './components/profile/profile';
+import MissionPage from './pages/Missions';
+
+function App() {
+  return (
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/missions" element={<MissionPage />} />
+        <Route path="/myProfile" element={<MyProfile />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
