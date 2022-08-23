@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 import './Rockets.css';
 
 const Rocket = (props) => {
@@ -8,10 +8,10 @@ const Rocket = (props) => {
     id, rocketName, description, flickrImages, reserved,
   } = props;
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  const reserveHandler = () => { dispatch(reserveRockets(id)); };
-  const cancelHandler = () => { dispatch(cancelRockets(id)); };
+  // const reserveHandler = () => { dispatch(reserveRockets(id)); };
+  // const cancelHandler = () => { dispatch(cancelRockets(id)); };
 
   return (
     <li className="rocket-container" id={id}>
@@ -21,18 +21,21 @@ const Rocket = (props) => {
       <div className="info-container">
         <h2>{rocketName}</h2>
         <div className="description">
-          {reserved && (<span className="badge">Reserved</span>)}
+          {reserved && <span className="badge">Reserved</span>}
           <span> </span>
           {description}
         </div>
-        <div>
+        {/* <div>
           {reserved && (
-            <button onClick={() => { cancelHandler(); }} className="rocket-cancel" type="button">Cancel Reservation</button>
+            // <button onClick={() =>
+             { cancelHandler(); }} className="rocket-cancel" type="button">Cancel
+              Reservation</button>
           )}
           {!reserved && (
-            <button onClick={() => { reserveHandler(); }} className="rocket-reserve" type="button">Reserve Rocket</button>
+            // <button onClick={() =>
+            { reserveHandler(); }} className="rocket-reserve" type="button">Reserve Rocket</button>
           )}
-        </div>
+        </div> */}
       </div>
     </li>
   );
