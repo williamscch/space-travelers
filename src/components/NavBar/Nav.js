@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import planet from '../planet.png';
+import planetColors from '../images/planetColors.png';
 import './Nav.css';
 
 function Nav() {
@@ -8,7 +8,7 @@ function Nav() {
   return (
     <nav>
 
-      <div className="logo-conatiner">
+      <div className="logo-container">
         <img className="nav-logo" src={planetColors} alt="logo" />
         <h1 className="nav-h1">Space Travelers Hub</h1>
 
