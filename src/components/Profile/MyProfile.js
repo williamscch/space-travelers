@@ -1,30 +1,16 @@
-import { useSelector } from 'react-redux';
+import ReservedMissions from './ReservedMissions';
 import ReservedRockets from './ReservedRockets';
-import './MyProfile.css';
 
 function MyProfile() {
-  const missions = useSelector((state) => state.missions);
+  const profileStyle = {
+    padding: '2rem 3rem',
+    display: 'flex',
+    gap: '2rem',
+  };
   return (
-    <div className="my-profile">
-      <section className="missions">
-        <h2>My Missions</h2>
-        <table className="missions-table">
-          <tbody>
-            {missions
-              && missions
-                .filter((mission) => mission.reserved === true)
-                .map((reserve) => (
-                  <tr className="row" key={reserve.missionId}>
-                    <td>{reserve.missionName}</td>
-                  </tr>
-                ))}
-          </tbody>
-        </table>
-      </section>
-      <section>
-        {' '}
-        <ReservedRockets />
-      </section>
+    <div style={profileStyle}>
+      <ReservedMissions />
+      <ReservedRockets />
     </div>
   );
 }
