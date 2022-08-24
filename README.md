@@ -53,8 +53,8 @@ You may also see any lint errors in the console.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/williamscolmenaresch/)
 
 👤 **AMK LASS**
--GitHub:[@amklass11](https://github.com/amklass11)
--LinkedIn:[@AmkLAss](https://www.linkedin.com/in/amk-lass-521565196/)
+- GitHub:[@amklass11](https://github.com/amklass11)
+- LinkedIn:[@AmkLAss](https://www.linkedin.com/in/amk-lass-521565196/)
 
 ## 🤝 Contributing
 
