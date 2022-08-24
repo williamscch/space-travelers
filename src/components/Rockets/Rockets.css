@@ -1,49 +1,29 @@
-.container {
-  padding: 0;
-  margin: 2em 4em;
-}
-
-.rockets-ul-container {
+section {
+  padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  list-style-type: none;
+  gap: 2rem;
 }
 
-.rocket-container {
+.rocket-card {
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }
 
-.info-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.rocket-card img {
+  width: 20rem;
+}
+
+.rocket-info {
   font-size: 1.2rem;
   height: 100%;
   line-height: 2rem;
 }
 
-.img-container img {
-  width: 20rem;
-}
-
-.rocket-cancel {
-  background-color: white;
-  border: 0.2px solid grey;
-  border-radius: 3px;
-  color: grey;
-  font-size: 1rem;
-  padding: 5px 7px;
-}
-
-.rocket-reserve {
-  background-color: rgb(8, 133, 206);
-  border: none;
-  border-radius: 3px;
-  color: white;
-  font-size: 1rem;
-  padding: 5px 7px;
+.rocket-info h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .badge {
@@ -52,5 +32,29 @@
   border-radius: 3px;
   color: white;
   font-size: 1rem;
-  padding: 1px 4px;
+  padding: 0 4px;
+}
+
+.no-badge {
+  display: none;
+}
+
+.reserve-rocket-button {
+  margin-top: auto;
+  background-color: rgb(8, 133, 206);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+  padding: 5px 7px;
+  width: 10rem;
+}
+
+.cancel-reservation-button {
+  background-color: white;
+  border: 0.2px solid grey;
+  border-radius: 3px;
+  color: grey;
+  font-size: 1rem;
+  padding: 5px 7px;
 }

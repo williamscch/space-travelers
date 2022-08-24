@@ -19,6 +19,7 @@ function Nav() {
             Rockets
           </NavLink>
         </li>
+        <span>|</span>
         <li className="nav-li">
           <NavLink to="/missions" className={activeLink}>
             Missions
