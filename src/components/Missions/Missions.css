@@ -1,3 +1,56 @@
-main {
-  empty-cells: show;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.container {
+  margin: 2rem auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.table {
+  border: 2px solid #7e7e7e;
+  border-collapse: collapse;
+}
+
+tr,
+th {
+  border: 2px solid #7e7e7e;
+  vertical-align: top;
+}
+
+td {
+  border: 2px solid #7e7e7e;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.head {
+  font-weight: bold !important;
+  text-align: left !important;
+  padding-left: 0.4rem;
+}
+
+tr > th:first-of-type {
+  text-align: left;
+  padding: 0.8rem 0 0 0.4rem;
+  font-weight: bold;
+}
+
+tr > th:nth-of-type(2) {
+  text-align: left;
+  padding: 0.8rem 0.4rem 1rem 0.4rem;
+  font-weight: normal;
+  max-width: 60%;
+}
+
+tr > th:nth-of-type(3) {
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  width: 150px;
+}
+
+tr > th:nth-of-type(4) {
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+  width: 150px;
 }
