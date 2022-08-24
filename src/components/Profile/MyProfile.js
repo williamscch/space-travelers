@@ -1,12 +1,12 @@
+import { useSelector } from 'react-redux';
 import ReservedRockets from './ReservedRockets';
 import './MyProfile.css';
-import { useSelector } from 'react-redux';
 
 function MyProfile() {
   const missions = useSelector((state) => state.missions);
   return (
     <div className="my-profile">
-       <section className="missions">
+      <section className="missions">
         <h2>My Missions</h2>
         <table className="missions-table">
           <tbody>
@@ -21,8 +21,10 @@ function MyProfile() {
           </tbody>
         </table>
       </section>
-      <section> <ReservedRockets/></section>
-     
+      <section>
+        {' '}
+        <ReservedRockets />
+      </section>
     </div>
   );
 }
