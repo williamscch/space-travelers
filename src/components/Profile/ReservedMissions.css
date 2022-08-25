@@ -1,0 +1,25 @@
+.missions {
+  width: 50%;
+}
+
+.missions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.row {
+  border: 2px solid rgb(222, 220, 220);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 15px;
+}
+
+.row > td {
+  border: 2px solid rgb(222, 220, 220);
+  padding: 1rem;
+  text-align: left;
+}
+
+td.row:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}

@@ -1,56 +1,60 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Space Traveler's Hub
 
-# Project Name
+> This is a Web App that makes use of the Live Data from the Space X API. Provides the users with commercial and scientific space travel services. The application allow them to book rockets and join selected space missions.
 
-> Description the project.
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Visual Studio Code, Git, GitHub using Gitflow.
+- React components.
+- Redux toolkit.
+- Modular CSS.
+- Jest.
 
-## Live Demo (if available)
+## Quick view
+> ![](src/components/images/screenshot-spaceX.png)
 
-[Live Demo Link](https://livedemo.com)
+## Live Demo
 
+[Press here to see this project live](https://spacetravelerswilliamscch.netlify.app/)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
+- To get a local copy up and running, copy the SSH key of the repository and run `git clone` in your terminal.
 
 ### Install
+- `npm install`: Install all the dependencies required locally.
 
-### Usage
+### Setup
+- `npm run build`: Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Run tests
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
 ### Deployment
+- `npm start`: Runs the app in the development mode.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### Run tests 
+- `npm test`: Launches the test runner in the interactive watch mode.\
 
-## Authors
+## 👤 Author
 
-👤 **Author1**
+👤 **Williams Colmenares**
+- GitHub: [@williamscch](https://github.com/williamscch)
+- Twitter: [@wdavidcch](https://twitter.com/wdavidcch)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/williamscolmenaresch/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **AMK LASS**
+- GitHub:[@amklass11](https://github.com/amklass11)
+- LinkedIn:[@AmkLAss](https://www.linkedin.com/in/amk-lass-521565196/)
 
 ## 🤝 Contributing
 
@@ -64,12 +68,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse Module 3 React and Redux.
+- Project indications [here](https://github.com/microverseinc/curriculum-react-redux/blob/main/group-project/project_space_travelers_hub.md).
+- Live Data form the Space X API.
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
