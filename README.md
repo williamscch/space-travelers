@@ -17,7 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-[Press here to see this project live](https://spacetravelerswilliamscch.netlify.app/)
+[Space X Live Demo](https://spacetravelers-williamscch.netlify.app/)
 
 ## Getting Started
 
